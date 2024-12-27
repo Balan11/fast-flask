@@ -1,5 +1,5 @@
-from flask import Flask,jsonify,request,redirect,url_for,session
-app = Flask(__name__)
+from flask import Flask,jsonify,request,redirect,url_for,session,render_template
+app = Flask(__name__,template_folder='template')
 app.config['DEBUG'] = True
 app.config['SECRET_KEY'] = "THISISMYSECRETKEY"
 
@@ -11,7 +11,7 @@ def index():
 @app.route("/home/<name>",methods=['POST','GET'])
 def home(name):
     session['name'] =  name
-    return "<h1>hi {} this is your home page  </h1>".format(name)
+    return render_template("home.html",name=name)
 @app.route("/json")
 def json():
     name='nothing'
@@ -33,13 +33,7 @@ def query():
 @app.route("/theform",methods=['GET','POST'])
 def theform():
     if request.method=="GET":
-        return '''<form method="POST" action='/theform'>
-    <input type="text" name="name">
-    <input type="text" name ="location">
-    <button type="submit"> save</button>
-
-    </form>
-    '''    
+        return render_template('forms.html')
     else:
         print("else")
         name = request.form['name']
