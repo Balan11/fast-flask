@@ -1,0 +1,9 @@
+CREATE TABLE "user" (
+	"id"	INTEGER,
+	"name"	TEXT UNIQUE,
+	"location"	TEXT,
+	PRIMARY KEY("id" AUTOINCREMENT)
+);
+
+SELECT * FROM user;
+INSERT INTO user VALUES(1,'balan','palani');
