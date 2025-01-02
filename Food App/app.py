@@ -4,15 +4,24 @@ app = Flask(__name__,template_folder='template')
 app.config['DEBUG'] = True
 app.config['SECRET_KEY'] = "THISISMYSECRETKEY"
 
-@app.route("/")
+@app.route("/",methods=['GET','POST'])
 def home():
-    return render_template('home.html')
-@app.route("/addfood")
+    if request.method=="GET":
+        return render_template('home.html')
+    else:
+      return render_template('home.html')
+@app.route("/addfood",methods=['GET','POST'])
 def addfood():
-    return render_template('add_food.html')
-@app.route("/day")
+    if request.method=='GET':
+        return render_template('add_food.html')
+    else:
+        return render_template('add_food.html')
+@app.route("/day",methods=['GET','POST'])
 def day():
-    return render_template('day.html')
+    if request.method=="GET":
+        return render_template('day.html')
+    else:
+         return render_template('day.html')
 if __name__ == "__main__":
     app.run()
     
