@@ -27,7 +27,10 @@ def index():
 @app.route("/home/<name>",methods=['POST','GET'])
 def home(name):
     session['name'] =  name
-    return render_template("home.html",name=name)
+    db = get_db()
+    cur = db.execute("select * from user")
+    results=cur.fetchall()
+    return render_template("home.html",name=name,results=results)
 @app.route("/json")
 def json():
     name='nothing'
@@ -51,9 +54,10 @@ def theform():
     if request.method=="GET":
         return render_template('forms.html')
     else:
-        print("else")
-        name = request.form['name']
-        return redirect(url_for("home",name=name))
+        db= get_db()
+        db.execute("insert into user (name,location) values(?,?)",[request.form['name'],request.form['location']])
+        db.commit()
+        return redirect(url_for("theform"))
            
 @app.route("/process",methods=["POST"])
 def process():
@@ -79,7 +83,6 @@ def viewresults():
     db  = get_db()
     print(db)
     cur=db.execute("select id,name,location  from user ")
-
     results = cur.fetchall()
     return "<h1>Id {} name{} location {}</h1>".format(results[0]['id'],results[0]['name'],results[0]['location'])
 if __name__ == "__main__":
