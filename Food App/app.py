@@ -40,8 +40,13 @@ def addfood():
 def day():
     if request.method=="GET":
         return render_template('day.html')
-    else:
-         return render_template('day.html')
+
+@app.route("/newday",method=['POST'])
+def newday():
+    if request.method=="POST":
+        print(request.form['new_day'])
+        return redirect('day')
+
 if __name__ == "__main__":
     app.run()
     
