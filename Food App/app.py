@@ -62,6 +62,8 @@ def newday():
         return redirect('day')
 @app.route("/view/<date>",methods=['GET','POST'])
 def view(date):
+    totals={}
+  
     mydate = datetime.datetime.strptime(date,"%Y%m%d").strftime("%Y-%m-%d")
     db = get_db()
     cur =db.execute("select id,entry_date from  log_date where entry_date=?",[mydate])
@@ -75,6 +77,16 @@ def view(date):
     food=db.execute("select id,name,protein,carbohydrate,calories,fat from food")
     myfood = food.fetchall()
     mydate= datetime.datetime.strptime(result['entry_date'],'%Y-%m-%d').strftime("%B %d,%Y")  
+    totals['protein']=0
+    totals['carbohydrate']=0
+    totals['fat']=0
+    totals['calories']=0
+    for i in all_food:
+        totals['protein']+=i['protein']
+        totals['carbohydrate']+=i['carbohydrate']
+        totals['fat']+=i['fat']
+        totals['calories']+=i['calories']
+        
     return render_template('day.html',result=mydate,myfood=myfood,date=date,food_day=all_food)
 
 if __name__ == "__main__":
