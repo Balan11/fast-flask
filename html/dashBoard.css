@@ -1,0 +1,3890 @@
+input[type="radio"] {
+    -ms-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+input[type="checkbox"] {
+    -ms-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+@media (max-width: 375px) {
+    .modal-body {
+        padding: 1.5rem 2rem !important;
+    }
+}
+
+.dashboard-content {
+    margin-top: 64px;
+}
+
+@media (min-width: 992px) {
+    .custom-accordion-body {
+        padding: 3rem 2rem !important;
+    }
+}
+
+.advanceSearchBtn {
+    margin-left: -1px;
+    border-radius: 0 !important;
+}
+
+.searchBtn {
+    margin-left: -1px;
+    border-radius: 0 !important;
+}
+
+.helpVideoBtn {
+    border-radius: 30px;
+    padding: 7px 21px;
+    border: none;
+    font-size: 10pt;
+    display: inline-flex;
+    align-items: center;
+}
+
+.videoHelpBtn {
+    border-radius: 30px;
+    padding: 7px 21px;
+    border: none;
+    float: right;
+    font-size: 10pt;
+}
+
+@media (max-width: 575px) {
+    .videoHelpBtn {
+        margin-top: 1rem;
+    }
+}
+
+/*Dashboard NavBar*/
+
+#dash-Nav {
+    padding: .75rem 1rem;
+}
+
+#dash-Nav li a {
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 48px 0 0;
+}
+
+.menuHelpBtn {
+    border-radius: 30px;
+    padding: 5px 20px !important;
+    border: none;
+    font-size: 10pt;
+}
+
+.n-logout-btn {
+    border-radius: 25px !important;
+    padding: 5px 35px !important;
+    border: none;
+}
+
+.dProfilephoto {
+    width: 50%;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+
+.icon-resize {
+    width: 20px !important;
+    height: 20px;
+    vertical-align: text-top;
+}
+
+.sidebar-position {
+    position: sticky;
+    height: calc(100vh - 48px);
+    padding-top: 3rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.sidebar-row-align {
+    justify-content: center;
+}
+
+.treeViewIcon {
+    margin-left: 0.5rem;
+    width: 15px !important;
+    height: 15px;
+}
+
+.treeViewMenu {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.treeViewMenu li:last-child {
+    border-bottom: none;
+}
+
+.treeViewMenu li a {
+    font-size: 10pt;
+    line-height: 2.5;
+}
+
+@media (max-width: 425px) {
+    .sidebar {
+        width: 70%;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 767px) {
+    .sidebar-position {
+        margin: 0 1rem;
+    }
+
+    .sidebar {
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .dashNav-mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .sidebar {
+        width: 30%;
+    }
+
+    .sidebar ul li a span {
+        font-size: 10pt;
+    }
+
+    .treeViewMenu li a {
+        font-size: 9pt;
+    }
+}
+
+@media (max-width: 991px) {
+    .dashNav-desktop {
+        display: none;
+    }
+
+    .dashNav-mobile {
+        display: block;
+    }
+
+    .dashNav-mobile a {
+        padding: 0.5rem 0;
+        display: flex;
+        justify-content: center;
+        font-size: 10pt;
+    }
+
+    .menuHelpBtn {
+        padding: 0.5rem 0;
+        flex-wrap: wrap;
+        align-items: center;
+        width: fit-content;
+        justify-self: center;
+        margin: 0.5rem 0;
+    }
+
+    .dProfilephoto {
+        width: 35%;
+    }
+
+    .sidebar {
+        padding: 1rem;
+        flex: 0 0 auto;
+        top: 60px;
+        left: auto;
+        overflow-y: auto;
+    }
+
+    .sidebar-row-align {
+        justify-content: flex-end;
+    }
+
+    .sidebar-position {
+        height: auto;
+        padding-top: 0;
+    }
+
+    .dashboard-content {
+        position: absolute;
+    }
+
+    .sidebar ul {
+        align-content: flex-start !important;
+        flex-wrap: nowrap;
+    }
+
+    .sidebar ul li a span {
+        font-size: 10pt;
+    }
+
+    .treeViewMenu li a {
+        font-size: 10pt;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1240px) {
+    .icon-resize {
+        vertical-align: middle;
+    }
+
+    .sidebar ul li a {
+        padding: 0.5rem;
+    }
+
+    .sidebar ul li a span {
+        font-size: 11pt;
+    }
+
+    .treeViewMenu li a {
+        font-size: 11pt;
+    }
+}
+
+@media (max-width: 1240px) {
+    .treeViewIcon {
+        width: 10px !important;
+        height: 10px;
+        vertical-align: baseline;
+    }
+}
+
+/*Dashboard Public Pages*/
+
+.dashboard-pubPages {
+    padding: 3rem;
+}
+
+@media (max-width: 767px) {
+    .dashboard-pubPages {
+        padding: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .dashboard-pubPages {
+        padding: 3rem 2rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .dashboard-pubPages {
+        padding: 3rem 1rem;
+    }
+}
+
+/*Dashboard Home*/
+
+.dashHome-Card {
+    width: 48%;
+    height: 450px;
+    padding: 20px;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.api-dashHome {
+    width: 100% !important;
+    height: 100% !important;
+    padding: 2rem;
+}
+
+.dashHome-CardAlign {
+    justify-content: center;
+}
+
+.myHolding-row {
+    margin: 0;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: inherit;
+    -ms-flex-align: inherit;
+    align-items: inherit;
+}
+
+.myHolding-Numbers {
+    text-align: center;
+    padding: 1rem 0.5rem 0.5rem;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -ms-flex-pack: justify;
+    justify-content: center;
+    -webkit-flex: auto 0 1;
+    -ms-flex: auto 0 1;
+    flex: auto 0 1;
+}
+
+.memInfo-row {
+    margin: 0;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: inherit;
+    -ms-flex-align: inherit;
+    align-items: inherit;
+}
+
+.memInfo-Numbers {
+    text-align: center;
+    padding: 1rem 0.5rem 0.5rem;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -ms-flex-pack: justify;
+    justify-content: center;
+    -webkit-flex: auto 0 1;
+    -ms-flex: auto 0 1;
+    flex: auto 0 1;
+}
+
+.memTotal-row {
+    margin: 0;
+}
+
+.memTotal-row h2 {
+    font-size: 16pt;
+}
+
+.myReferral-row {
+    margin: 0;
+}
+
+.myReferral-Numbers {
+    text-align: center;
+    padding: 1rem;
+}
+
+.actCard-btn {
+    padding: 10px;
+    border: none;
+    width: 100%;
+    font-size: 12pt;
+}
+
+.myDash-cardTitle {
+    font-size: 8pt;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.adm-ChartTitle {
+    font-size: 10pt;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.myDash-addLink {
+    font-size: 10pt;
+    margin: 0;
+}
+
+.dashHome-Card canvas {
+    margin: 0 auto;
+}
+
+.resourceMenuBtn {
+    padding: 10px 20px;
+    border: none;
+    width: 100%;
+    font-size: 12pt;
+}
+
+.resourceMenu:last-child {
+    border: none;
+}
+
+.admChart-legend {
+    margin: 0;
+    font-size: 9pt;
+    vertical-align: text-top;
+}
+
+.admChart-legend span {
+    font-size: 12pt;
+    vertical-align: text-bottom;
+}
+
+.pie2-recruiterlegend, .pie2-apilegend, .bar-recruiterlegend, .bar-apilegend, .bar-applegend {
+    margin: 0;
+    font-size: 9pt;
+}
+
+.pie2-recruiterlegend span, .bar-recruiterlegend span {
+    font-size: 12pt;
+    vertical-align: text-bottom;
+}
+
+.pie2-apilegend span, .bar-apilegend span {
+    font-size: 12pt;
+    vertical-align: text-bottom;
+}
+
+.bar-applegend span {
+    font-size: 12pt;
+    vertical-align: text-bottom;
+}
+
+.myHolding-Title {
+    display: none;
+}
+
+.dash-RefTerms-label {
+    margin-left: 10px;
+    margin-top: -28px;
+    flex-direction: row;
+}
+
+@media (max-width: 399px) {
+    .dash-RefTerms-label {
+        margin-left: 30px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 431px) {
+    .dash-RefTerms-label {
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 425px) {
+    .myDash-cardTitle {
+        font-size: 6pt;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 495px) {
+    .myDash-cardTitle {
+        font-size: 7pt;
+    }
+}
+
+@media (min-width: 432px) and (max-width: 647px) {
+    .dash-RefTerms-label {
+        margin-left: 28px;
+    }
+}
+
+@media (max-width: 575px) {
+    .api-dashHome {
+        padding: 0.5rem;
+    }
+
+    .dash-doughnut {
+        width: 160px !important;
+        height: auto !important;
+    }
+
+    .dash-data-doughnut {
+        width: 190px !important;
+        height: auto !important;
+    }
+
+    .dash-api-doughnut {
+        width: 220px !important;
+        height: auto !important;
+    }
+
+    .dash-line {
+        width: 190px !important;
+        height: auto !important;
+    }
+
+    .dash-pie {
+        width: 90px !important;
+        height: auto !important;
+    }
+
+    .dash-bar {
+        width: 100% !important;
+        height: auto !important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 1026px) {
+    .dash-doughnut {
+        width: 225px !important;
+        height: auto !important;
+    }
+
+    .dash-data-doughnut {
+        width: 225px !important;
+        height: auto !important;
+    }
+
+    .dash-api-doughnut {
+        width: 270px !important;
+        height: auto !important;
+    }
+
+    .dash-pie {
+        width: 130px !important;
+        height: auto !important;
+    }
+
+    .dash-bar {
+        width: 330px !important;
+        height: auto !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .dashHome-Card {
+        width: 100%;
+        height: auto;
+    }
+
+    .myHolding-Tab-mView .table-title {
+        display: none !important;
+    }
+
+    .myHolding-Tab-mView .table-data {
+        display: block !important;
+        text-align: left !important;
+        border: none !important;
+        padding: 0.5rem 1.5rem !important;
+    }
+
+    .myHolding-Tab-mView .table-row .table-data:first-child p {
+        padding-top: 0.5rem !important;
+    }
+
+    .myHolding-Tab-mView .table-row .table-data:nth-child(even) p {
+        font-size: 16pt !important;
+        font-weight: 700 !important;
+    }
+
+    .myHolding-Tab-mView .table-row .table-data:nth-child(even) {
+        padding-bottom: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    .myHolding-Tab-mView .table-row .table-data:last-child {
+        padding-bottom: 1rem !important;
+    }
+
+    .myHolding-Tab-mView .table-row .table-data:nth-child(odd) p {
+        font-size: 10pt !important;
+    }
+
+    .myHolding-Title {
+        display: inline-flex;
+        font-weight: 600;
+        margin-right: 0.5rem;
+        font-size: 10pt;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1026px) {
+    .dashHome-Card {
+        width: 75%;
+        height: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1054px) {
+    .myHolding-Tab-mView .table-title,
+    .myHolding-Tab-mView .table-data p {
+        font-size: 10pt !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .dashHome-Card canvas {
+        padding: 1rem 0;
+    }
+
+    .refCopy-btn {
+        margin-top: 1rem;
+    }
+
+    .refLink-Para {
+        font-size: 10pt;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1380px) {
+    .refLink-Para {
+        font-size: 9pt;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1603px) {
+    .dash-RefTerms-label {
+        margin-left: 30px;
+    }
+}
+
+@media (min-width: 1027px) and (max-width: 1240px) {
+    .dash-doughnut {
+        width: 165px !important;
+        height: auto !important;
+    }
+
+    .dash-data-doughnut {
+        width: 245px !important;
+        height: auto !important;
+    }
+
+    .dash-api-doughnut {
+        width: 350px !important;
+        height: auto !important;
+    }
+
+    .dash-line {
+        width: 210px !important;
+        height: auto !important;
+    }
+
+    .dash-pie {
+        width: 90px !important;
+        height: auto !important;
+        display: inline-block !important;
+    }
+
+    .dash-bar {
+        width: 220px !important;
+        height: auto !important;
+    }
+
+    .myDash-cardTitle {
+        font-size: 7pt;
+    }
+}
+
+@media (min-width: 1027px) and (max-width: 1115px) {
+    .recruiterLink {
+        font-size: 8pt;
+    }
+}
+
+@media (min-width: 1241px) {
+    .dash-doughnut {
+        width: 195px !important;
+        height: auto !important;
+    }
+
+    .dash-data-doughnut {
+        width: 240px !important;
+        height: auto !important;
+    }
+
+    .dash-api-doughnut {
+        width: 300px !important;
+        height: auto !important;
+    }
+
+    .dash-line {
+        width: 280px !important;
+        height: auto !important;
+    }
+
+    .dash-pie {
+        width: 90px !important;
+        height: auto !important;
+        display: inline-block !important;
+    }
+
+    .dash-bar {
+        width: 270px !important;
+        height: auto !important;
+    }
+}
+
+@media (min-width: 1380px) {
+    .refLink-Para {
+        font-size: 11pt;
+    }
+}
+
+/*Dashboard Profile*/
+
+.dash-profileEdit-btn {
+    border-radius: 30px;
+    padding: 10px 50px;
+    border: none;
+    float: right;
+    font-size: 14pt;
+}
+
+.dResumeProfile {
+    padding: 5rem 7rem;
+}
+
+.dResumeProfile p {
+    font-size: 1rem;
+}
+
+.profileNavBtn {
+    padding: 10px 25px;
+    border: 0;
+    font-weight: 500;
+    float: left;
+}
+
+.profileNavShareBtn {
+    padding: 10px 25px;
+    border: 0;
+    font-weight: 500;
+    float: none;
+}
+
+.profileImg {
+    border-radius: 50%;
+    width: 175px;
+}
+
+.ProfNav-mobView {
+    display: none;
+    z-index: 99;
+}
+
+.Prof-editIcon {
+    display: none;
+}
+
+.Prof-popup-btn {
+    border-radius: 25px;
+    padding: 5px 35px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.profile-Toptabs {
+    overflow: hidden;
+}
+
+.profile-Toptabs button {
+    padding: 10px 25px;
+    border: 0;
+    font-weight: 500;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    transition: 0.3s;
+    width: 25%;
+}
+
+.profile-icon-col {
+    width: auto;
+    text-align: center;
+}
+
+#visualView {
+    display: block;
+}
+
+.profile-content {
+    display: none;
+}
+
+.CodeLine {
+    padding: 15px;
+}
+
+.CodeLine li {
+    list-style: none;
+}
+
+.CodeLine li p {
+    line-height: 1 !important;
+    padding-bottom: 0 !important;
+    word-wrap: break-word;
+    font-family: Courier New;
+    font-size: 12pt;
+    margin: 0;
+}
+
+.editProfile {
+    padding: 3rem;
+}
+
+.editProf-stat-label {
+    align-items: center;
+    display: flex;
+}
+
+.editProf-stat-input {
+    display: flex;
+    width: auto;
+    margin: 0 1rem 0 0.5rem;
+}
+
+.editProf-lang-input {
+    display: inline;
+    width: auto;
+}
+
+.profEditIcon {
+    font-size: 16pt;
+    margin: 0 5px;
+}
+
+.editProfile .profFieldLabel p {
+    margin-bottom: 0.5rem;
+}
+
+.rProfPhotoBtn {
+    border-radius: 0;
+    font-size: 10pt;
+}
+
+.mProfPhotoBtn {
+    border-radius: 0;
+    font-size: 10pt;
+}
+
+.mProfPic {
+    width: 150px;
+    border: 1px solid #e7e7e7;
+}
+
+@media (max-width: 370px) {
+    .editProf-lang-input {
+        margin: 0 0.3rem 0 0.1rem;
+    }
+}
+
+@media (max-width: 396px) {
+    .profEditIcon {
+        margin: 0 3px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .langListRow {
+        align-self: stretch;
+    }
+
+    .langCheckList {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .dResumeProfile {
+        padding: 0;
+    }
+
+    .dash-profileEdit-btn {
+        display: none;
+    }
+
+    .ProfNav-deskView {
+        display: none;
+    }
+
+    .ProfNav-mobView {
+        display: flex;
+    }
+
+    .profile-Toptabs {
+        position: fixed;
+        top: 61px;
+    }
+
+    .profile-Toptabs-bg {
+        margin: 0;
+    }
+
+    .profileNavBtn {
+        text-align: center;
+        padding: 15px 0;
+        width: 100%;
+    }
+
+    .profileNavShareBtn {
+        text-align: center;
+        padding: 10px 0;
+        width: 100%;
+        font-size: 10pt;
+    }
+
+    .profView-Btn-Icon {
+        font-size: 18pt;
+    }
+
+    .Prof-editIcon {
+        display: block;
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 10rem;
+        top: 16rem;
+        right: 2rem;
+        border-radius: 50px;
+        text-align: center;
+    }
+
+    .Prof-actionIcon {
+        display: flex;
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .iconFloat {
+        font-size: 24px;
+        margin-top: 18px;
+    }
+
+    .prof-user-align {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .prof-user-res-contact {
+        display: flex;
+        justify-content: center;
+    }
+
+    .prof-user-contact {
+        display: none;
+    }
+
+    .profileImg {
+        margin-top: 1rem;
+    }
+
+    .editProfile {
+        padding: 0;
+    }
+
+    /*.langListRow {
+        flex-direction: column-reverse;
+    }*/
+
+    .langIconCol {
+        margin-bottom: 0.5rem;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .mProfPic {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .mPicBtnCol {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .profile-user-info {
+        display: grid;
+        justify-content: flex-start;
+        align-content: center;
+        margin-top: 1.5rem;
+    }
+
+    .editProfile .profFieldLabel {
+        text-align: end;
+    }
+
+    .editProfile .profFieldLabel p {
+        margin-right: 1rem;
+    }
+
+    .langCol {
+        width: auto;
+    }
+
+    .langCheckList {
+        display: flex;
+        justify-content: center;
+    }
+
+    .prof-user-res-contact {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .prof-user-contact {
+        font-size: 11pt;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1105px) {
+    .profileNavBtn {
+        font-size: 10pt;
+        padding: 10px 20px;
+    }
+
+    .profileNavShareBtn {
+        font-size: 10pt;
+        padding: 10px 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .dResumeProfile {
+        padding: 5rem 3rem;
+    }
+}
+
+/*Admin Profile*/
+
+.admProfile .profFieldLabel p {
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .admProfile .profFieldLabel {
+        text-align: end;
+    }
+
+    .admProfile .profFieldLabel p {
+        margin-right: 1rem;
+    }
+}
+
+/*Dashboard Folders*/
+
+.dash-folder-card {
+    border-radius: 0;
+    width: 100%;
+    max-width: 30%;
+    padding: 25px;
+    margin: 0 auto 3rem;
+    justify-content: space-between;
+}
+
+.folder-add-btn {
+    border-radius: 30px;
+    padding: 10px 50px;
+    border: none;
+    float: right;
+    font-size: 14pt;
+}
+
+.folder-add-mbtn {
+    display: none;
+}
+
+.folder-view-btn {
+    padding: 7px 0;
+    border: none;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 8pt;
+}
+
+.folder-docAdd-btn {
+    padding: 7px 0;
+    border: none;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 8pt;
+}
+
+.folder-card-icon {
+    font-size: 40pt;
+}
+
+.folder-popup-btn {
+    border-radius: 25px;
+    padding: 5px 35px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 2rem;
+}
+
+.folderIcon {
+    font-size: 18pt;
+    float: right;
+}
+
+@media (max-width: 575px) {
+    .folder-add-btn {
+        display: none;
+    }
+
+    .folder-add-mbtn {
+        display: flex;
+        padding: 11px;
+        border-radius: 50%;
+        border: none;
+        float: right;
+        font-size: 18pt;
+        height: 45px;
+        width: 45px;
+    }
+
+    .folder-popup-btn {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .dash-folder-card {
+        max-width: 100%;
+        margin: 0 auto 2rem !important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+    .folder-add-btn {
+        font-size: 10pt;
+    }
+}
+
+@media (min-width: 728px) and (max-width: 991px) {
+    .folder-view-btn {
+        font-size: 7pt;
+    }
+
+    .folder-docAdd-btn {
+        font-size: 7pt;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+    .dash-folder-card {
+        max-width: 390px;
+        margin: 0 5rem 2rem !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .folder-row-align {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .folder-row-align {
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1094px) {
+    .dash-folder-card {
+        max-width: 30%;
+        margin: 0 auto 2rem !important;
+        padding: 15px;
+    }
+
+    .dash-folder-card h5 {
+        font-size: 0.95rem;
+    }
+
+    .folderIcon {
+        font-size: 15pt;
+    }
+
+    .folder-view-btn {
+        font-size: 7pt;
+    }
+
+    .folder-docAdd-btn {
+        font-size: 7pt;
+    }
+}
+
+@media (min-width: 1095px) and (max-width: 1607px) {
+    .dash-folder-card {
+        padding: 15px;
+    }
+}
+
+@media (min-width: 1095px) and (max-width: 1219px) {
+    .dash-folder-card {
+        max-width: 30%;
+        margin: 0 auto 2rem !important;
+    }
+}
+
+@media (max-width: 1199px) {
+    .folder-card-align {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (min-width: 1220px) and (max-width: 1399px) {
+    .dash-folder-card {
+        max-width: 30%;
+        margin: 0 auto 2rem !important;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1607px) {
+    .dash-folder-card {
+        max-width: 30%;
+        margin: 0 auto 2rem !important;
+    }
+}
+
+/*Dashboard Documents*/
+
+.dash-custom-card {
+    border-radius: 0;
+    width: 100%;
+    max-width: 30%;
+    padding: 25px;
+    margin: 0 auto 3rem;
+    justify-content: space-between;
+}
+
+.dash-icon-col {
+    text-align: center;
+}
+
+.dash-card-icon {
+    font-size: 40pt;
+    display: flex;
+}
+
+.dash-doc-btn {
+    border: none;
+    width: 100%;
+    font-size: 24pt;
+}
+
+.dash-add-btn {
+    border-radius: 30px;
+    padding: 10px 50px;
+    border: none;
+    float: right;
+    font-size: 14pt;
+}
+
+.dash-add-mbtn {
+    display: none;
+}
+
+.doc-popup-btn {
+    border-radius: 25px;
+    padding: 5px 35px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.docIcon {
+    font-size: 18pt;
+}
+
+@media (max-width: 575px) {
+    .dash-add-btn {
+        display: none;
+    }
+
+    .dash-add-mbtn {
+        display: flex;
+        padding: 11px;
+        border-radius: 50%;
+        border: none;
+        float: right;
+        font-size: 18pt;
+        height: 45px;
+        width: 45px;
+    }
+
+    .doc-popup-btn {
+        margin-bottom: 0;
+    }
+
+    /*.dash-icon-col {
+        width: 50%;
+    }*/
+}
+
+@media (max-width: 575px) {
+    .dash-custom-card {
+        max-width: 100%;
+        margin: 0 auto 2rem !important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+    .dash-custom-card {
+        max-width: 390px;
+        margin: 0 5rem 2rem !important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+    .dash-add-btn {
+        font-size: 10pt;
+    }
+}
+
+@media (max-width: 991px) {
+    .doc-row-align {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .doc-row-align {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 1199px) {
+    .dash-card-align {
+        margin-bottom: 3rem;
+    }
+}
+
+@media (min-width: 1095px) and (max-width: 1607px) {
+    .dash-custom-card {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 1095px) and (max-width: 1219px) {
+    .dash-custom-card {
+        max-width: 30%;
+        margin: 0 auto 3rem !important;
+    }
+}
+
+@media (min-width: 1220px) and (max-width: 1399px) {
+    .dash-custom-card {
+        max-width: 30%;
+        margin: 0 auto 3rem !important;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1607px) {
+    .dash-custom-card {
+        max-width: 30%;
+        margin: 0 auto 3rem !important;
+    }
+}
+
+/*Dashboard Privacy*/
+
+.dash-privacy-btn {
+    border-radius: 25px;
+    padding: 5px 35px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.privacysettings {
+    padding: 3rem;
+}
+
+.dash-privacy-label {
+    margin-left: 30px;
+    margin-top: -28px;
+    flex-direction: row;
+}
+
+.dash-notification-label {
+    display: flex;
+    margin-left: 30px;
+    margin-top: -28px;
+    flex-direction: row;
+}
+
+@media (max-width: 767px) {
+    .privacysettings {
+        padding: 0;
+    }
+}
+
+/*Resume Templates*/
+
+.resTemp {
+    padding: 3rem;
+}
+
+.tempActBtn {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 0;
+    font-size: 11pt;
+    padding: 5px 0;
+}
+
+@media (max-width: 767px) {
+    .resTemp {
+        padding: 0;
+    }
+}
+
+/*Resume Template Preview*/
+
+.tempPreview {
+    padding: 5rem 7rem;
+}
+
+.profInfoCol {
+    background: #1e2d3c;
+    color: #fff;
+}
+
+.profInfoCol {
+    padding: 1rem 2rem;
+}
+
+.profTxtCol {
+    padding: 1rem 2rem;
+}
+
+.tempProfPic {
+    display: flex;
+    margin: 0 auto;
+    border-radius: 100%;
+    border: 10px solid #486887;
+    width: 200px;
+}
+
+.profInfoCol h4, .profInfoCol h5, .profInfoCol hr {
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .tempPreview {
+        padding: 0;
+    }
+
+    .tempResponsive {
+        flex-direction: column-reverse;
+    }
+
+    .profInfoCol {
+        padding: 1rem;
+    }
+
+    .profTxtCol {
+        padding: 1rem;
+    }
+
+    .profPicRes {
+        display: none;
+    }
+
+    .mprofPicRes {
+        display: flex;
+    }
+}
+
+@media (min-width: 768px) {
+    .profPicRes {
+        display: flex;
+    }
+
+    .mprofPicRes {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .tempPreview {
+        padding: 5rem 3rem;
+    }
+
+    .profInfoCol {
+        padding: 1rem 1.5rem;
+    }
+
+    .profInfoCol p {
+        font-size: 10pt !important;
+    }
+
+    .profTxtCol {
+        padding: 1rem 1.5rem;
+    }
+}
+
+/*Dashboard Support*/
+
+.support {
+    padding: 3rem;
+}
+
+.dash-support-btn {
+    border-radius: 25px;
+    padding: 7px 35px;
+    border: none;
+    font-size: 12pt;
+}
+
+@media (max-width: 767px) {
+    .support {
+        padding: 0;
+    }
+}
+
+/*Dashboard Account*/
+
+.dash-accdel-btn {
+    border-radius: 25px;
+    padding: 5px 35px;
+    border: none;
+    /*width: 100%;*/
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.account-btn {
+    border-radius: 25px;
+    padding: 10px 45px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.themeColorList {
+    --size: 35px;
+    display: grid;
+    grid-template-columns: repeat(12, var(--size));
+    grid-gap: calc(var(--size) / 3);
+    list-style: none;
+    padding: 0;
+}
+
+.themeColorList li {
+    height: var(--size);
+    border: 1px solid #ddd;
+}
+
+.themeColorList li input {
+    position: relative;
+    opacity: 0;
+    margin: 10px;
+    transform: scale(2.5);
+}
+
+.themeColorList li input:checked {
+    opacity: 1;
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    background: #dadada;
+    border: 1px solid #dadada;
+}
+
+.themeColorList li input:checked:after {
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    background: #fff;
+}
+
+.themeColorList li:nth-child(1) {
+    background: #2c2c2c;
+}
+
+.themeColorList li:nth-child(2) {
+    background: #85af5a;
+}
+
+.themeColorList li:nth-child(3) {
+    background: #7f7f7f;
+}
+
+.themeColorList li:nth-child(4) {
+    background: #e1525f;
+}
+
+.themeColorList li:nth-child(5) {
+    background: #ffffff;
+}
+
+.themeColorList li:nth-child(6) {
+    background: #ffe81a;
+}
+
+.themeColorList li:nth-child(7) {
+    background: #02285b;
+}
+
+.themeColorList li:nth-child(8) {
+    background: #8b4513;
+}
+
+@media (max-width: 375px) {
+    .account-btn {
+        font-size: 10pt;
+        padding: 10px 30px;
+    }
+}
+
+@media (max-width: 425px) {
+    .code-verify-btn, .code-send-btn {
+        font-size: 9pt;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .themeColorList {
+        --size: 40px;
+        display: grid;
+        grid-template-columns: repeat(4, var(--size));
+        grid-gap: calc(var(--size) / 3);
+        list-style: none;
+        padding: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .dash-accordion-body {
+        padding: 3rem 3rem 1rem !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .dash-acc-form {
+        width: 50%;
+    }
+}
+
+/*Dashboard Notes*/
+
+.notesRow-align {
+    padding: 2rem;
+}
+
+.notesRow-align:last-child {
+    border-bottom: none;
+}
+
+.dash-notes-bg {
+    padding: 3rem;
+}
+
+.dash-notes-btn {
+    border-radius: 30px;
+    padding: 10px 50px;
+    border: none;
+    float: right;
+    font-size: 14pt;
+}
+
+.dash-notes-mbtn {
+    display: none;
+}
+
+.notes-calendar {
+    position: relative;
+    width: 100px;
+    line-height: 1.2;
+}
+
+.notes-calendar .notes-calendar-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.notes-calendar .notes-calendar-body .notes-calendar-month {
+    width: 100%;
+    font-size: 12pt;
+    padding: 5px 0;
+    font-weight: 400;
+}
+
+.notes-calendar .notes-calendar-body .notes-calendar-date {
+    font-size: 32pt;
+    font-weight: 600;
+}
+
+.notes-calendar .notes-calendar-body .notes-calendar-year {
+    font-size: 10pt;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+.notes-icon-col {
+    width: auto;
+    text-align: center;
+}
+
+.notesIcon {
+    font-size: 18pt;
+    margin-bottom: 2rem;
+}
+
+#addNotes-form {
+    padding: 1.5rem 3rem 0 2rem;
+    margin-bottom: 2rem;
+}
+
+.notes-popup-btn {
+    border-radius: 25px;
+    padding: 5px 35px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.notes-del-btn {
+    border-radius: 25px;
+    padding: 5px 35px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.notesBtn-align {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.calendarColAlign {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (max-width: 575px) {
+    .dash-notes-btn {
+        display: none;
+    }
+
+    .dash-notes-mbtn {
+        display: flex;
+        padding: 11px;
+        border-radius: 50%;
+        border: none;
+        float: right;
+        font-size: 18pt;
+        height: 45px;
+        width: 45px;
+    }
+
+    .notes-calendar {
+        margin-bottom: 2rem;
+    }
+
+    .notesBtn-col-align {
+        text-align: right;
+    }
+
+    .calendarColAlign {
+        justify-content: flex-start;
+    }
+
+    .notes-calendar {
+        width: 95px;
+    }
+
+    .notes-calendar-month {
+        font-size: 10pt !important;
+        padding: 5px 0 !important;
+    }
+
+    .notes-calendar-date {
+        font-size: 26pt !important;
+    }
+
+    .addform-calendar {
+        width: 75px !important;
+    }
+
+    .addform-calendar-month {
+        font-size: 9pt !important;
+        padding: 3px 0 !important;
+    }
+
+    .addform-calendar-date {
+        font-size: 20pt !important;
+    }
+
+    .addform-calendar-year {
+        font-size: 9pt !important;
+    }
+}
+
+@media (min-width: 576px) {
+    .notesBtn-col-align {
+        text-align: end;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+    .notes-calendar {
+        justify-content: center;
+        display: inline-table;
+    }
+}
+
+@media (max-width: 767px) {
+    #addNotes-form {
+        padding: 1rem;
+    }
+
+    .dash-notes-bg {
+        padding: 0;
+    }
+
+    .notesRow-align {
+        padding: 2rem 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .dash-notes-bg {
+        padding: 3rem 2rem;
+    }
+
+    .notesRow-align {
+        padding: 2rem 0rem;
+    }
+
+    .notes-col-align {
+        width: 35%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .addform-calendar {
+        width: 75px !important;
+    }
+
+    .addform-calendar-month {
+        font-size: 9pt !important;
+        padding: 3px 0 !important;
+    }
+
+    .addform-calendar-date {
+        font-size: 20pt !important;
+    }
+
+    .addform-calendar-year {
+        font-size: 9pt !important;
+    }
+}
+
+/*Dashboard Manage Request*/
+
+.managerequest {
+    padding: 3rem;
+}
+
+.dash-manage-btn {
+    border-radius: 25px;
+    padding: 7px 35px;
+    border: none;
+    font-size: 12pt;
+    float: right;
+}
+
+.dash-grant-btn {
+    border-radius: 30px;
+    padding: 10px 50px;
+    border: none;
+    float: right;
+    font-size: 14pt;
+}
+
+.grant-popup-btn {
+    border-radius: 25px;
+    padding: 5px 35px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.dash-grant-mbtn {
+    display: none;
+}
+
+.dash-manage-mbtn {
+    display: none;
+}
+
+.dash-table-view {
+    display: table;
+    width: 100%;
+    /* max-width: 1200px; */
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.tableHeading {
+    width: 100%;
+    display: inherit;
+}
+
+.tableBody {
+    width: 100%;
+    display: inherit;
+}
+
+.table-row {
+    display: table-row;
+}
+
+.dash-table-view .tableHeading .table-title {
+    padding: 1rem 1.5rem;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.dash-table-view .table-title,
+.dash-table-view .table-data {
+    vertical-align: top;
+    text-align: left;
+    display: table-cell;
+    word-break: break-word;
+}
+
+.dash-table-view .table-data {
+    padding: 0.7rem 1.5rem;
+    line-height: 1.2;
+}
+
+.table-search .form-control {
+    padding-left: 3rem;
+}
+
+.table-search .form-control-tabsearch {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    margin-left: 1rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+}
+
+@media (max-width: 375px) {
+    .dash-manage-btn {
+        font-size: 10pt;
+    }
+}
+
+@media (max-width: 575px) {
+    .dash-manage-btn {
+        display: none
+    }
+
+    .dash-manage-mbtn {
+        display: block;
+        float: right;
+        font-size: 11pt;
+    }
+
+    .dash-grant-btn {
+        display: none;
+    }
+
+    .dash-grant-mbtn {
+        display: flex;
+        padding: 14px;
+        border-radius: 50%;
+        border: none;
+        float: right;
+        font-size: 12pt;
+        width: 45px;
+        height: 45px;
+    }
+
+    .table-search {
+        margin-top: 1rem;
+    }
+
+    .table-approve-btn {
+        padding: 10px !important;
+        font-size: 9pt;
+    }
+
+    .table-decline-btn {
+        padding: 10px 15px !important;
+        font-size: 9pt;
+    }
+
+    .table-visit-btn {
+        padding: 10px 34px !important;
+        font-size: 10pt;
+    }
+
+    .table-status-btn {
+        padding: 10px 28px !important;
+        font-size: 10pt;
+    }
+
+    .table-withdraw-btn {
+        padding: 10px 35px !important;
+        font-size: 10pt;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+    .dash-grant-btn {
+        font-size: 10pt;
+    }
+}
+
+@media (max-width: 767px) {
+    .managerequest {
+        padding: 0;
+    }
+
+    .manage-table-mView {
+        margin-bottom: 2rem;
+    }
+
+    .table-Mobview {
+        word-wrap: break-word;
+        border: none;
+    }
+
+    .table-Mobview .table-title,
+    .table-Mobview .table-data {
+        display: none;
+    }
+
+    .table-Mobview .table-title:first-child,
+    .table-Mobview .table-data:first-child {
+        display: table-cell;
+    }
+
+    .table-Mobview .tableBody .table-row {
+        overflow: hidden;
+        margin: 0 0 2rem;
+    }
+
+    .external-mView {
+        display: block;
+        margin: 0.5rem 0 !important;
+    }
+
+    .manage-Recruiter-tab .table-title {
+        display: none !important;
+    }
+
+    .manage-Recruiter-tab .table-data {
+        display: block !important;
+        text-align: left !important;
+        border: none !important;
+        padding: 0.25rem 1.5rem !important;
+    }
+
+    .manage-Recruiter-tab .table-row .table-data:first-child p {
+        font-size: 16pt !important;
+        font-weight: 700 !important;
+        margin-top: 0.5rem !important;
+    }
+
+    .manage-Recruiter-tab .table-row .table-data:nth-child(2) {
+        padding-bottom: 1rem !important;
+    }
+
+    .manage-Recruiter-tab .table-row .table-data:last-child {
+        display: none !important;
+    }
+
+    .manage-Request-tab .table-title, .manage-Request-tab .table-row .table-data {
+        display: none !important;
+    }
+
+    .manage-Request-tab .table-data:first-child,
+    .manage-Request-tab .table-data:nth-child(2) {
+        display: block !important;
+        text-align: left !important;
+        border: none !important;
+        padding: 0.25rem 1.5rem !important;
+    }
+
+    .manage-Request-tab .table-row .table-data:first-child p {
+        font-size: 16pt !important;
+        font-weight: 700 !important;
+        margin-top: 0.5rem !important;
+    }
+
+    .manage-Request-tab .table-row .table-data:nth-child(2) {
+        padding-bottom: 1rem !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1054px) {
+    .latest-CanTab-mView .table-title,
+    .latest-CanTab-mView .table-data p {
+        font-size: 10pt !important;
+    }
+
+    .manage-Request-tab .table-title,
+    .manage-Request-tab .table-data p {
+        font-size: 10pt !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .external-mView {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .managerequest {
+        padding: 3rem 2rem;
+    }
+}
+
+/*Dashboard Member Benefit*/
+
+.dashboard-benefit {
+    padding: 3rem;
+}
+
+.dash-benefit-card {
+    margin: 0 1rem 2rem !important;
+}
+
+@media (max-width: 767px) {
+    .dashboard-benefit {
+        padding: 0;
+    }
+
+    .dash-benefit-card {
+        margin: 0 1rem 2rem !important;
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .m-card-align {
+        margin-bottom: 3rem !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .m-card-align {
+        margin-bottom: 3rem !important;
+    }
+
+    .dashbenefit-card-align {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .dash-benefit-card {
+        max-width: 370px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1144px) {
+    .dash-benefit-card {
+        width: 45%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1365px) {
+    .dash-benefit-title {
+        font-size: 17pt;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+    .dash-benefit-content {
+        font-size: 12pt;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1631px) {
+    .dashbenefit-card-align {
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1145px) and (max-width: 1341px) {
+    .dash-benefit-card {
+        width: 46%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1365px) {
+    .dash-benefit-title {
+        font-size: 18pt;
+    }
+
+    .dash-benefit-content {
+        font-size: 13pt;
+    }
+}
+
+@media (min-width: 1366px) and (max-width: 1399px) {
+    .dash-benefit-title {
+        font-size: 16pt;
+    }
+}
+
+@media (min-width: 1366px) and (max-width: 1631px) {
+    .dash-benefit-card {
+        width: 30%;
+    }
+}
+
+@media (min-width: 1632px) {
+    .dashbenefit-card-align {
+        justify-content: center;
+    }
+}
+
+/*Dashboard Recruiter Benefit*/
+
+@media (max-width: 991px) {
+    .rDashbenefit-card-align {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1631px) {
+    .rDashbenefit-card-align {
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width: 1632px) {
+    .rDashbenefit-card-align {
+        justify-content: center;
+    }
+}
+
+/*Dashboard Referral*/
+
+.dashboard-referral {
+    padding: 3rem;
+}
+
+.dash-milestone-img {
+    width: 120px;
+}
+
+@media (max-width: 375px) {
+    .dash-milestone-txt-tag {
+        font-size: 18pt !important;
+    }
+
+    .dash-milestone-txt-tag span {
+        font-size: 38pt !important;
+    }
+
+    .dash-milestone-percent {
+        font-size: 12pt !important;
+    }
+
+    .dash-milestone-percent span {
+        font-size: 25pt !important;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+    .dash-milestone-img {
+        left: -15px;
+        top: -55px;
+    }
+}
+
+@media (max-width: 575px) {
+    .dash-milestone-bubble {
+        width: 100%;
+        padding: 50px 20px 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .dashboard-referral {
+        padding: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .dashboard-referral {
+        padding: 3rem 2rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .dash-milestone-align {
+        margin-bottom: 5rem !important;
+    }
+
+    .dash-refer-card {
+        max-width: 390px;
+    }
+}
+
+@media (min-width: 992px) {
+    .dash-milestone-align {
+        margin-bottom: 5rem !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .dash-milestone-card {
+        max-width: 280px !important;
+    }
+
+    .dash-milestone-percent {
+        font-size: 13pt;
+    }
+
+    .dash-milestone-percent span {
+        font-size: 28pt;
+    }
+
+    /*.dash-milestone-ipo {
+        font-size: 28pt;
+    }*/
+
+    .dashboard-referral {
+        padding: 3rem 1rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1149px) {
+    .dash-refer-card {
+        max-width: 140px !important;
+    }
+
+    .dash-refer-card p {
+        font-size: 10pt !important;
+    }
+
+    .referral-card-arrow:after {
+        margin: 0 -4rem 0 0;
+    }
+}
+
+@media (min-width: 1150px) and (max-width: 1199px) {
+    .dash-refer-card {
+        max-width: 160px !important;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .dash-milestone-card {
+        max-width: 280px !important;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1365px) {
+    .dash-refer-card {
+        max-width: 170px !important;
+    }
+
+    .referral-card-arrow:after {
+        left: 9rem;
+    }
+}
+
+@media (min-width: 1366px) and (max-width: 1399px) {
+    .dash-refer-card {
+        max-width: 205px !important;
+    }
+
+    .referral-card-arrow:after {
+        left: 11.5rem;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1475px) {
+    .dash-milestone-card {
+        max-width: 300px !important;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1607px) {
+    .dash-refer-card {
+        max-width: 210px !important;
+    }
+
+    .referral-card-arrow:after {
+        left: 12rem;
+    }
+}
+
+@media (min-width: 1476px) and (max-width: 1725px) {
+    .dash-milestone-card {
+        max-width: 200px !important;
+    }
+
+    .dash-milestone-txt-tag {
+        font-size: 11pt;
+    }
+
+    .dash-milestone-txt-tag span {
+        font-size: 30pt;
+    }
+
+    .dash-milestone-value {
+        font-size: 10pt;
+    }
+
+    .dash-milestone-percent {
+        font-size: 10pt;
+    }
+
+    .dash-milestone-percent span {
+        font-size: 19pt;
+    }
+
+    /*.dash-milestone-ipo {
+        font-size: 19pt;
+    }*/
+}
+
+@media (min-width: 1608px) and (max-width: 1720px) {
+    .dash-refer-card {
+        max-width: 255px !important;
+    }
+
+    .referral-card-arrow:after {
+        left: 15rem;
+    }
+}
+
+@media (min-width: 1726px) {
+    .dash-milestone-card {
+        max-width: 240px !important;
+    }
+
+    .dash-milestone-txt-tag {
+        font-size: 18pt;
+    }
+
+    .dash-milestone-txt-tag span {
+        font-size: 45pt;
+    }
+
+    .dash-milestone-percent {
+        font-size: 12pt;
+    }
+
+    .dash-milestone-percent span {
+        font-size: 24pt;
+    }
+
+    /*.dash-milestone-ipo {
+        font-size: 24pt;
+    }*/
+}
+
+/*Toolkit*/
+
+.dashboard-toolkit {
+    padding: 3rem;
+}
+
+.dashboard-toolkit img {
+    margin-bottom: 1rem;
+}
+
+/*View Recruiter Access*/
+
+.viewRecruiterProfile {
+    padding: 3rem;
+}
+
+.access-popup-btn {
+    border-radius: 25px;
+    padding: 5px 35px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.recruit-access-btn {
+    padding: 10px 20px;
+    border: none;
+    /*margin-bottom: 20px;*/
+}
+
+.recruit-access-mbtn {
+    display: none;
+}
+
+.recruit-access-colAlign {
+    width: auto;
+}
+
+.recruit-profAccess-card {
+    border-radius: 0;
+    width: 100%;
+    max-width: 275px;
+    padding: 25px;
+    margin-bottom: 2rem;
+}
+
+.recruit-profAccess-icon {
+    font-size: 40pt;
+    display: flex;
+}
+
+.profAccess-revoke-btn {
+    border: none;
+    font-size: 10pt;
+    padding: 10px 20px;
+}
+
+.access-btn-align {
+    justify-content: flex-end;
+}
+
+.profAccess-card-align {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+@media (max-width: 575px) {
+    .access-btn-align {
+        justify-content: center;
+    }
+
+    .recruit-access-btn {
+        display: none;
+    }
+
+    .recruit-access-mbtn {
+        display: flex;
+        padding: 14px;
+        border-radius: 50%;
+        border: none;
+        float: right;
+        font-size: 12pt;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 767px) {
+    .viewRecruiterProfile {
+        padding: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .rAccess-accordion-body {
+        padding: 3rem !important;
+    }
+}
+
+/*View Recruiter Request*/
+
+.viewRecruiterRequest {
+    padding: 3rem;
+}
+
+.v-recruiter-form {
+    padding: 2.5rem 3rem 3rem;
+    border-top: none;
+}
+
+.approve-popup-btn {
+    border-radius: 25px;
+    padding: 5px 35px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.decline-popup-btn {
+    border-radius: 25px;
+    padding: 5px 35px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.request-decline-btn {
+    padding: 10px 20px;
+    border: none;
+}
+
+.request-approve-btn {
+    padding: 10px 20px;
+    border: none;
+}
+
+.recruit-request-colAlign {
+    width: auto;
+}
+
+.request-btn-align {
+    justify-content: flex-end;
+}
+
+.recruiterMsg {
+    padding: 25px 15px;
+    width: 100%;
+    margin: 0;
+}
+
+@media (max-width: 338px) {
+    .request-decline-btn {
+        font-size: 10px;
+    }
+
+    .request-approve-btn {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 393px) {
+    .request-decline-btn {
+        margin-bottom: 1rem;
+        padding: 10px 26px;
+    }
+}
+
+@media (max-width: 575px) {
+    .request-btn-align {
+        justify-content: center;
+    }
+
+    .recruit-request-btn {
+        font-size: 10pt;
+    }
+}
+
+@media (max-width: 767px) {
+    .viewRecruiterRequest {
+        padding: 0;
+    }
+
+    .v-recruiter-form {
+        padding: 0;
+    }
+}
+
+/*Grant Profile Request*/
+
+.grantRequest {
+    padding: 3rem 3rem 0;
+}
+
+.grant-recruiter-form {
+    padding: 2.5rem 3rem 3rem;
+    border-top: none;
+}
+
+.grantRequest-decline-btn {
+    padding: 10px 20px;
+    border: none;
+}
+
+.grantRequest-approve-btn {
+    padding: 10px 20px;
+    border: none;
+}
+
+.recruit-grantRequest-colAlign {
+    width: auto;
+}
+
+.grantRequest-btn-align {
+    justify-content: flex-end;
+}
+
+@media (max-width: 338px) {
+    .grantRequest-decline-btn {
+        font-size: 10px;
+    }
+
+    .grantRequest-approve-btn {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 575px) {
+    .grantRequest-btn-align {
+        justify-content: center;
+    }
+
+    .recruit-grantRequest-btn {
+        font-size: 10pt;
+    }
+}
+
+@media (max-width: 767px) {
+    .grantRequest {
+        padding: 0;
+    }
+
+    .grant-recruiter-form {
+        padding: 0;
+    }
+}
+
+/*View API Access*/
+
+.viewAPIProfile {
+    padding: 3rem;
+}
+
+.api-popup-btn {
+    border-radius: 25px;
+    padding: 5px 35px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.api-access-btn {
+    padding: 10px 20px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.api-access-mbtn {
+    display: none;
+}
+
+.api-access-colAlign {
+    width: auto;
+}
+
+.api-btn-align {
+    justify-content: flex-end;
+}
+
+@media (max-width: 575px) {
+    .api-btn-align {
+        justify-content: center;
+    }
+
+    .api-access-btn {
+        display: none;
+    }
+
+    .api-access-mbtn {
+        display: flex;
+        padding: 14px;
+        border-radius: 50%;
+        border: none;
+        float: right;
+        font-size: 12pt;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 767px) {
+    .viewAPIProfile {
+        padding: 0;
+    }
+}
+
+/*Messages*/
+
+.chatMessages {
+    padding: 3rem;
+}
+
+.messageRow {
+    padding: 2rem 0 0;
+    margin: 0;
+}
+
+.messaging-body .message.left {
+    padding: 0 0 0 15px;
+    text-align: left;
+    float: left;
+}
+
+.messaging-body .message {
+    position: relative;
+    max-width: 600px;
+    overflow: hidden;
+    clear: both;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.messaging-body .message .nameTime {
+    font-size: 14px;
+    line-height: 36px;
+}
+
+.messaging-body .message.left .text {
+    border-radius: 8px 8px 8px 0;
+}
+
+.messaging-body .message .text {
+    padding: 15px;
+    font-size: 16px;
+    line-height: 26px;
+    position: relative;
+}
+
+.messaging-body .message.left .text:before {
+    left: -30px;
+    border-right-width: 12px;
+}
+
+.messaging-body .message .text:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    border: 18px solid transparent;
+    border-bottom-width: 0;
+}
+
+.messaging-body .message.right {
+    padding: 0 15px 0 0;
+    text-align: right;
+    float: right;
+}
+
+.messaging-body .message.right .text {
+    border-radius: 8px 8px 0 8px;
+}
+
+.messaging-body .message.right .text:before {
+    right: -30px;
+    border-left-width: 12px;
+}
+
+.messaging-body .message.newMsg {
+    max-width: 100%;
+    padding: 2rem 1rem;
+}
+
+.messaging-body .message.newMsg .chatBtn {
+    padding: 10px 20px;
+    border: none;
+}
+
+.chatProfileImg {
+    width: 65px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.msgList {
+    padding-bottom: 1rem;
+}
+
+.msgList.active {
+    font-weight: 700;
+}
+
+.msgList:last-child {
+    border: none;
+}
+
+@media (max-width: 767px) {
+    .chatMessages {
+        padding: 0;
+    }
+}
+
+/*Public Profile Messages*/
+
+.pubProfileMessages {
+    padding: 3rem;
+}
+
+.pubMsgBtn {
+    padding: 5px 35px;
+    border: none;
+    font-size: 12pt;
+}
+
+#pubMessage .active {
+    font-weight: 700;
+}
+
+.pubBlockMsg {
+    border-radius: 25px;
+    padding: 5px 35px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.pubBlockMsgBtn {
+    padding: 5px 35px;
+    border: none;
+    font-size: 12pt;
+    float: right;
+}
+
+.pubPopMsg {
+    padding: 5px 35px;
+    border: none;
+    font-size: 12pt;
+}
+
+@media (max-width: 374px) {
+    .pubMsgBtn, .pubBlockMsgBtn {
+        padding: 5px 25px;
+        font-size: 11pt;
+    }
+}
+
+@media (max-width: 767px) {
+    .pubProfileMessages {
+        padding: 0;
+    }
+}
+
+/*My Jobs*/
+
+.myJobs {
+    padding: 3rem;
+}
+
+.jobList {
+    padding-bottom: 1rem;
+}
+
+.jobList.active {
+    font-weight: 700;
+}
+
+.jobList:last-child {
+    border: none;
+}
+
+@media (max-width: 767px) {
+    .myJobs {
+        padding: 0;
+    }
+}
+
+/*Job Description*/
+
+.jobDescription {
+    padding: 3rem;
+}
+
+@media (max-width: 767px) {
+    .jobDescription {
+        padding: 0;
+    }
+}
+
+/* Join Referral Program */
+
+.joinReferral {
+    padding: 3rem;
+}
+
+@media (max-width: 767px) {
+    .joinReferral {
+        padding: 0;
+    }
+}
+
+.joinRef-btn {
+    padding: 10px 35px;
+    border: none;
+    font-size: 12pt;
+}
+
+/*Search Resume*/
+
+.searchResume {
+    padding: 3rem;
+}
+
+.dash-search-btn {
+    border-radius: 25px;
+    padding: 10px 45px;
+    border: none;
+    margin-top: 20px;
+}
+
+.searchFormBg {
+    padding: 30px 15px;
+}
+
+.dash-search-form {
+    text-align: left !important;
+}
+
+@media (max-width: 767px) {
+    .searchResume {
+        padding: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .dash-search-form {
+        width: 50%;
+        display: inline-block;
+    }
+}
+
+/*Search Results*/
+
+.searchResults {
+    padding: 3rem;
+}
+
+.search-result-row .search-result-data {
+    padding: 0 1.5rem;
+    line-height: 1.5;
+}
+
+.search-result-row .search-result-data:first-child {
+    padding-top: 1rem;
+}
+
+.search-result-row .search-result-data:first-child p {
+    font-size: 16pt;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.search-result-row .search-result-data:last-child {
+    padding-bottom: 1rem;
+}
+
+.searchData-Title {
+    font-weight: 600;
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 767px) {
+    .searchResults {
+        padding: 0;
+    }
+}
+
+/*View Candidate Profile*/
+
+.viewCanProfile {
+    padding: 5rem;
+}
+
+.viewCanProfile-doc-card {
+    border-radius: 0;
+    width: 100%;
+    max-width: 275px;
+    padding: 25px;
+    margin-bottom: 2rem;
+}
+
+.viewCanProfile-doc-btn {
+    border: none;
+    font-size: 10pt;
+    padding: 10px 20px;
+}
+
+.viewCanProfile-doc-card-align {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.viewCanProfile-doc-icon {
+    font-size: 40pt;
+    display: flex;
+}
+
+.add-pipeline-btn {
+    border-radius: 30px;
+    padding: 10px 50px;
+    border: none;
+    float: right;
+    font-size: 14pt;
+}
+
+.add-pipeline-mbtn {
+    display: none;
+}
+
+.viewProfileNav-mobView {
+    display: none;
+    z-index: 99;
+}
+
+.viewProfile-Toptabs {
+    overflow: hidden;
+}
+
+.viewProfile-Toptabs button {
+    padding: 10px 50px;
+    border: 0;
+    font-weight: 500;
+    transition: 0.3s;
+    width: 100%;
+    display: flex;
+}
+
+.pipeLine-Stat-Title {
+    display: none;
+}
+
+@media (max-width: 575px) {
+    .add-pipeline-btn {
+        display: none;
+    }
+
+    .add-pipeline-mbtn {
+        display: flex;
+        padding: 11px;
+        border-radius: 50%;
+        border: none;
+        float: right;
+        font-size: 18pt;
+        height: 45px;
+        width: 45px;
+    }
+}
+
+@media (max-width: 767px) {
+    .viewCanProfile {
+        padding: 0;
+    }
+
+    .viewProfileTopAction {
+        padding: 10px 25px;
+        border: 0;
+        font-weight: 500;
+        float: right;
+        justify-content: center;
+        align-content: center;
+        transition: 0.3s;
+        width: auto;
+        margin-bottom: 1.5rem;
+    }
+
+    .viewProfileNav-mobView {
+        display: flex;
+    }
+
+    .viewProfileBtnList {
+        position: absolute;
+        top: 92px;
+        display: grid;
+        right: 28px;
+        padding: 0 35px;
+    }
+
+    .viewProfileBtnList li {
+        list-style: none;
+    }
+
+    .viewProfileBtnList li button {
+        text-align: left !important;
+    }
+
+    .viewCanProfile-btn-icon {
+        font-size: 18pt;
+    }
+
+    .pipeline-statTab-mView .table-title {
+        display: none !important;
+    }
+
+    .pipeline-statTab-mView .table-data {
+        display: block !important;
+        text-align: left !important;
+        border: none !important;
+        padding: 0.25rem 1.5rem !important;
+    }
+
+    .pipeline-statTab-mView .table-row .table-data:first-child p {
+        font-size: 16pt !important;
+        font-weight: 700 !important;
+        margin-top: 0.5rem !important;
+    }
+
+    .pipeline-statTab-mView .table-row .table-data:last-child {
+        padding-bottom: 1rem !important;
+    }
+
+    .pipeLine-Stat-Title {
+        display: inline-flex;
+        font-weight: 600;
+        margin-right: 0.5rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .add-pipeline-btn {
+        font-size: 10pt;
+    }
+}
+
+/*Dashboard Recruiter Database*/
+
+.myDatabase {
+    padding: 3rem;
+}
+
+.myData-row {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: inherit;
+    -ms-flex-align: inherit;
+    align-items: inherit;
+}
+
+.myData-Numbers {
+    text-align: center;
+    padding: 2rem 1rem;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-flex: auto 0 1;
+    -ms-flex: auto 0 1;
+    flex: auto 0 1;
+}
+
+.latest-CanTitle {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .myDatabase {
+        padding: 0;
+    }
+
+    .latest-CanTab-mView .table-title {
+        display: none !important;
+    }
+
+    .latest-CanTab-mView .table-data {
+        display: block !important;
+        text-align: left !important;
+        border: none !important;
+        padding: 0.25rem 1.5rem !important;
+    }
+
+    .latest-CanTab-mView .table-row .table-data:first-child p {
+        font-size: 16pt !important;
+        font-weight: 700 !important;
+        margin-top: 0.5rem !important;
+    }
+
+    .latest-CanTab-mView .table-row .table-data:last-child {
+        padding-bottom: 1rem !important;
+    }
+
+    .latest-CanTitle {
+        display: inline-flex;
+        font-weight: 600;
+        margin-right: 0.5rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1054px) {
+    .latest-CanTab-mView .table-title,
+    .latest-CanTab-mView .table-data p {
+        font-size: 10pt !important;
+    }
+}
+
+/*Dashboard Recruiter Pipeline*/
+
+.pipeLineFilter {
+    margin: 0;
+    padding: 2rem 1rem;
+}
+
+.pipeLineFilter h1 {
+    font-size: 45pt;
+}
+
+.pipeLine-filter-btn {
+    float: right;
+    padding: 5px 35px;
+    border: none;
+    margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+    .pipeLineFilter h1 {
+        margin-bottom: 2rem;
+    }
+}
+
+/*Dashboard Job Description*/
+
+.JobStatusInfo {
+    float: right;
+}
+
+.jobLogo {
+    width: 200px;
+}
+
+@media (max-width: 575px) {
+    .JobTitleInfo {
+        margin-bottom: 1.5rem !important;
+    }
+}
+
+/*Dashboard Job Posting*/
+
+.jobPost-stat-label {
+    align-items: center;
+    display: flex;
+}
+
+.jobPost-stat-input {
+    display: flex;
+    width: auto;
+    margin-right: 1rem;
+}
+
+/*Dashboard Edit PipeLine*/
+
+.pipelineStatus-Select-1,
+.pipelineStatus-Select-2 {
+    float: left;
+    width: 100%;
+}
+
+#pipeLine-List1 {
+    height: 200px;
+    padding: 0;
+}
+
+#pipeLine-List1 option {
+    padding: 4px 10px 4px 10px;
+}
+
+.pipelineStatus-Select-arrows {
+    justify-content: center;
+}
+
+.pipelineStatus-Select-arrows input {
+    margin-bottom: 5px;
+    padding: 7px;
+    width: 100%;
+    font-size: 14pt;
+}
+
+.newPipeline-btn {
+    padding: 7px 15px;
+    border: none;
+    width: 100%;
+}
+
+.pipeline-arrange-btn {
+    padding: 7px;
+    border: none;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 425px) {
+    .pipelineStatus-Select-arrows input {
+        font-size: 11pt;
+    }
+}
+
+@media (max-width: 575px) {
+    .newPipeline-btn {
+        margin-top: 1rem;
+        width: auto;
+        float: right;
+    }
+}
+
+/*Dashboard Online Presence*/
+
+.dash-social-card {
+    border-radius: 0;
+    width: 100%; 
+    max-width: 500px; 
+    padding: 20px;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 1095px) and (max-width: 1607px) {
+    .dash-social-card {
+        padding: 20px;
+        margin: 0 1rem 2rem !important;
+    }
+}
+
+@media (min-width: 1095px) and (max-width: 1219px) {
+    .dash-social-card {
+        max-width: 390px;
+    }
+}
+
+@media (min-width: 1220px) and (max-width: 1344px) {
+    .dash-social-card {
+        max-width: 440px;
+    }
+}
+
+/*Dashboard My PVF*/
+
+.dndTitleelement {
+    cursor: move;
+}
+
+.dndelement {
+    cursor: move;
+}
+
+.myPVF {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    gap: 16px;
+    height: 100%;
+}
+
+.pvfList {
+    display: flex;
+    flex-direction: column;
+    min-height: 120px;
+    flex-shrink: 0;
+}
+
+.pvfDnd {
+    font-size: 16px;
+    cursor: move;
+}
+
+.is-draggable {
+    scale: 1.05;
+}
+
+.pvf-Toptabs {
+    overflow: hidden;
+}
+
+.pvf-Toptabs button {
+    padding: 10px 25px;
+    border: 0;
+    font-weight: 500;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    transition: 0.3s;
+    width: 33.33333333%;
+}
+
+.pvfBtn {
+    padding: 10px 25px;
+    border: 0;
+    font-weight: 500;
+}
+
+.PVFNav-mobView {
+    display: none;
+    z-index: 99;
+}
+
+#titleView {
+    display: block;
+}
+
+.mobileView {
+    display: none;
+}
+
+.otherDevView {
+    display: block;
+}
+
+.save-pvf-btn {
+    border-radius: 25px;
+    padding: 10px 45px;
+    border: none;
+    margin-top: 20px;
+}
+
+@media (max-width: 425px) {
+    .pvf-Toptabs button {
+        padding: 10px 0;
+        font-size: 10pt;
+    }
+}
+
+@media (max-width: 767px) {
+    .PVFNav-deskView {
+        display: none;
+    }
+
+    .PVFNav-mobView {
+        display: flex;
+    }
+
+    .pvf-Toptabs {
+        position: fixed;
+        top: 64px;
+    }
+
+    .pvf-Toptabs-bg {
+        margin: 0;
+    }
+
+    .pvfBtn {
+        text-align: center;
+        padding: 15px 0;
+        width: 100%;
+    }
+
+    .mobileView {
+        display: block
+    }
+
+    .otherDevView {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1125px) {
+    .pvfBtn {
+        font-size: 10pt;
+    }
+
+    .pvf-Toptabs button {
+        padding: 10px 15px;
+    }
+}
+
+/*API Dashboard Examples*/
+
+#htmlexampleView {
+    display: block;
+}
+
+.example-content {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .exampleCodeLine {
+        padding: 0 !important;
+    }
+
+    .example-Toptabs button {
+        width: 33.33333333%;
+    }
+}
+
+/*API Dashboard Ready Reckoner*/
+
+@media (min-width: 768px) {
+    .readyRecContainer {
+        padding: 3rem 5rem;
+    }
+}
+
+/*Admin Users Controls*/
+
+.admUser {
+    padding: 3rem;
+}
+
+@media (max-width: 767px) {
+    .admUser {
+        padding: 0;
+    }
+}
+
+.userPrivilege-label {
+    align-items: center;
+    display: flex;
+}
+
+.userPrivilege-input {
+    display: flex;
+    width: auto;
+    margin-right: 1rem;
+}
+
+/*Admin Search*/
+
+.admSearch-bg {
+    padding: 3rem;
+}
+
+.adm-MemInfo-Title {
+    display: none;
+}
+
+.admSearch-btn {
+    border-radius: 25px;
+    padding: 7px 35px;
+    border: none;
+    font-size: 12pt;
+}
+
+.admViewProfile {
+    padding: 3rem;
+}
+
+.admViewProfile p {
+    font-size: 1rem;
+}
+
+@media (max-width: 767px) {
+    .admSearch-bg {
+        padding: 0;
+    }
+
+    .adm-MemInfo-Title {
+        display: inline-flex;
+        font-weight: 600;
+        margin-right: 0.5rem;
+    }
+
+    .admViewProfile {
+        padding: 0;
+    }
+}
+
+/*Admin Profile Action*/
+
+.actionRow {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.actionColSpace {
+    display: flex;
+    justify-content: space-between;
+}
+
+.actionBtn {
+    border-radius: 0;
+    padding: 15px 0;
+    border: none;
+    font-size: 11pt;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .actionColSpace {
+        width: 45%;
+    }
+}
+
+@media (min-width: 992px) {
+    .actionColSpace {
+        width: 30%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .actionBtn {
+        font-size: 9pt;
+    }
+}
+
+/*Dashboard Table Layout*/
+
+.admdash-table-view {
+    display: table;
+    width: 100%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.admdash-table-view p {
+    font-size: 12pt;
+}
+
+.admdash-table-view tbody {
+    width: 100%;
+    display: inherit;
+}
+
+.admdash-table-view tr {
+    display: table-row;
+}
+
+.admdash-table-view th {
+    padding: 1rem 0.9rem;
+    line-height: 1.5;
+    background: #d3d3d3;
+    border: 1px solid #fff;
+}
+
+.admdash-table-view th,
+.admdash-table-view td {
+    vertical-align: middle;
+    text-align: left;
+    display: table-cell;
+    word-break: normal;
+    font-size: 12pt;
+}
+
+.admdash-table-view td {
+    padding: 0.7rem;
+    line-height: 1.2;
+    border: 1px solid #fff;
+}
+
+.admdash-table-view tbody tr:nth-child(odd) td {
+    background: #fbfbfb;
+}
+
+.admdash-table-view tbody tr:nth-child(even) td {
+    background: #ebebeb;
+}
+
+.admdash-table-view .paging {
+    display: inline-flex !important;
+    margin: 2rem 0 1rem;
+}
+
+.admdash-table-view .paging tr, .admdash-table-view .paging td {
+    background: transparent !important;
+}
+
+.admdash-table-view .paging td {
+    padding: 0 !important;
+    line-height: normal;
+}
+
+@media (max-width: 575px) {
+    .admdash-table-view th, .admdash-table-view td {
+        padding: 0.4rem;
+        font-size: 8pt;
+    }
+
+    .admdash-table-view td p {
+        font-size: 8pt !important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .admdash-table-view th, .admdash-table-view td {
+        padding: 0.5rem;
+        font-size: 4.9pt;
+    }
+
+    .admdash-table-view td p {
+        font-size: 9pt !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .admdash-table-view th, .admdash-table-view td {
+        padding: 0.5rem;
+        font-size: 11pt;
+    }
+}
+
+@media (max-width: 1599px) {
+    .admdash-table-view th, .admdash-table-view td {
+        word-break: break-all;
+    }
+}
+
+/*Admin Dashboard Member Overview*/
+
+.dashMem-Card {
+    width: 48%;
+    height: 550px;
+    padding: 20px;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.dashMem-Card canvas {
+    margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+    .dashMem-Card {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1026px) {
+    .dashMem-Card {
+        width: 75%;
+        height: auto;
+    }
+}
+
+@media (max-width: 991px) {
+    .dashMem-Card canvas {
+        padding: 1rem 0;
+    }
+}
+
+/*Admin Add API*/
+
+.addAPI-bg {
+    padding: 3rem;
+}
+
+.saveAPI-btn {
+    border-radius: 25px;
+    padding: 7px 35px;
+    border: none;
+    font-size: 12pt;
+}
+
+/*Admin API Profile*/
+
+.apiLogo {
+    width: 270px;
+}
+
+/*Admin Referral Actions*/
+
+.refLink {
+    font-size: 10pt !important;
+}
+
+/*Dashboard Footer*/
+
+#dashBoard-footer {
+    background: url(../images/ornament.png);
+    padding: 50px 0;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    background-size: 20%;
+}
+
+@media (max-width: 991px) {
+    #dashBoard-footer {
+        background-size: 50%;
+    }
+}

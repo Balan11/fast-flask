@@ -1,22 +1,10 @@
 from flask import Flask,jsonify,request,redirect,url_for,session,render_template,g
 import sqlite3,datetime
+from database import get_db,connect_db,close_db
 app = Flask(__name__,template_folder='template')
 app.config['DEBUG'] = True
 app.config['SECRET_KEY'] = "THISISMYSECRETKEY"
-# ---------------------- db session start ----------------
-def connect_db():
-    sql=sqlite3.connect("foodappDb.db")
-    sql.row_factory = sqlite3.Row
-    return sql
-def get_db():
-    if not hasattr(g,'sqlite3_db'):
-        g.sqlite_db=connect_db()
-    return g.sqlite_db
 
-def close_db():
-    if hasattr(g,'sqlite_db'):
-        g.sqlite_db.close()
-#------------------------------- db session close
 @app.route("/",methods=['GET','POST'])
 def home():
     if request.method=="GET":
