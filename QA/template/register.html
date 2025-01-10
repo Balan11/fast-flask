@@ -6,6 +6,13 @@
     <title>Register</title>
 </head>
 <body>
+    <h1> Register User</h1>
+
+    <form method="POST" action="{{url_for('register')}}">
+        <input type="text" name="username" id="username" placeholder="Enter the Username"><br><br>
+        <input type="password" name="password" id="password" placeholder="Enter the password"><br><br>
+        <button type="submit">Create User</button>
+    </form>
     
 </body>
-</html>
+</html>     
