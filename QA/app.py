@@ -2,8 +2,12 @@ from flask import Flask,render_template,redirect,g,url_for,request,session
 from werkzeug.security import check_password_hash,generate_password_hash
 from database import get_db,connect_db,close_db
 import os
+from migratedb import conn
+from emailconfig import *
 
 app =Flask(__name__,template_folder='template')
+mail = Mail(app)
+mail.init_app(app)
 app.config['DEBUG'] = True
 app.config['SECRET_KEY'] =os.urandom(24)
 
@@ -16,6 +20,7 @@ def get_current_user():
 @app.route("/")
 def index():
     user=None
+
     if 'user' in session :
         user= session['user']
     return render_template('index.html',user=user)
