@@ -8,6 +8,15 @@ from emailconfig import *
 app =Flask(__name__,template_folder='template')
 mail = Mail(app)
 mail.init_app(app)
+app.config['MAIL_SERVER']=''
+app.config['MAIL_USERNAME']=''
+app.config['MAIL_PASSWORD'] =''
+app.config['MAIL_PORT']=''
+app.config['MAIL_USE_TLS']=''
+app.config['MAIL_USE_SSL']=''
+app.config['MAIL_DEFAULT_SENDER']=''
+
+
 app.config['DEBUG'] = True
 app.config['SECRET_KEY'] =os.urandom(24)
 
